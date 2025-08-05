@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="In-depth review of Book of Ra slot, including gameplay, features, and ratings">
+    <meta name="keywords" content="book of ra, slot review, gambling">
+    <title>Slot Expert - Book of Ra Review</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#e0f7ff',
+                            100: '#b3e5fc',
+                            200: '#81d4fa',
+                            300: '#4fc3f7',
+                            400: '#29b6f6',
+                            500: '#03a9f4', // Neon blue
+                            600: '#039be5',
+                            700: '#0288d1',
+                            800: '#0277bd',
+                            900: '#01579b',
+                        },
+                        neon: {
+                            pink: '#ff007a', // Neon pink
+                            green: '#00ff9f', // Neon green
+                        },
+                        dark: {
+                            900: '#0a0c1b', // Dark background
+                            800: '#1a1e33',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'], // Modern font
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            background-color: #0a0c1b;
+            color: #ffffff;
+        }
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #ff007a;
+            transition: width 0.3s ease;
+        }
+        .nav-link:hover::after {
+            width: 100%;
+        }
+        .nav-link:hover {
+            color: #ff007a !important;
+        }
+        .hero-gradient {
+            background: linear-gradient(135deg, #0a0c1b 0%, #1a1e33 100%);
+        }
+        .chip {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: radial-gradient(circle at 30% 30%, #ff007a, #03a9f4);
+            box-shadow: 0 3px 5px rgba(0,0,0,0.5);
+            color: #ffffff;
+            font-weight: bold;
+            text-align: center;
+            line-height: 40px;
+            margin: 0 5px;
+        }
+        .chip::after {
+            content: '';
+            top: 4px;
+            left: 4px;
+            right: 4px;
+            bottom: 4px;
+            border: 1px dashed rgba(255,255,255,0.3);
+            border-radius: 50%;
+        }
+        .language-switcher {
+            position: relative;
+        }
+        .language-dropdown {
+            display: none;
+            position: absolute;
+            right: 0;
+            background: #1a1e33;
+            border-radius: 8px;
+            padding: 8px 0;
+            min-width: 120px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+        }
+        .language-switcher:hover .language-dropdown {
+            display: block;
+        }
+        .btn-neon {
+            background: linear-gradient(45deg, #ff007a, #03a9f4);
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            color: #ffffff;
+            font-weight: bold;
+            text-transform: uppercase;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .btn-neon:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(255, 0, 122, 0.5);
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        @media (max-width: 640px) {
+            .hero-content {
+                text-align: center;
+            }
+            .hero-buttons {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    </style>
+</head>
+<body class="font-sans">
+    <!-- Fixed Navigation Bar -->
+    <nav class="fixed w-full bg-dark-900 shadow-md z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex items-center">
+                    <a href="core.html" class="flex items-center">
+                        <div class="chip text-sm">777</div>
+                        <span class="text-xl font-bold text-neon-pink">Slot Expert</span>
+                    </a>
+                </div>
+                
+                <!-- Main Menu -->
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="new-slots.html" class="nav-link text-white hover:text-neon-pink px-3 py-2 text-sm font-medium" data-i18n="nav.new_slots">New Slots</a>
+                    <a href="https://example.com/pragmatic-slots" class="nav-link text-white hover:text-neon-pink px-3 py-2 text-sm font-medium" data-i18n="nav.pragmatic_slots">Pragmatic Slots</a>
+                    <a href="all-slots.html" class="nav-link text-white hover:text-neon-pink px-3 py-2 text-sm font-medium" data-i18n="nav.all_slots">All Slots</a>
+                    
+                    <!-- Language Switcher -->
+                    <div class="language-switcher">
+                        <button class="nav-link text-white hover:text-neon-pink px-3 py-2 text-sm font-medium flex items-center">
+                            <i class="fas fa-globe mr-1"></i> <span id="lang-indicator">EN</span>
+                        </button>
+                        <div class="language-dropdown">
+                            <a href="#" onclick="changeLanguage('en')" class="block px-4 py-2 text-sm text-white hover:bg-dark-900 hover:text-neon-pink">English</a>
+                            <a href="#" onclick="changeLanguage('ru')" class="block px-4 py-2 text-sm text-white hover:bg-dark-900 hover:text-neon-pink">Русский</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <div class="md:hidden flex items-center">
+                    <button class="text-white hover:text-neon-pink focus:outline-none" id="mobile-menu-button">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <div class="md:hidden hidden bg-dark-800 shadow-lg" id="mobile-menu">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="new-slots.html" class="block px-3 py-2 text-base font-medium text-white hover:text-neon-pink hover:bg-dark-900" data-i18n="nav.new_slots">New Slots</a>
+                <a href="https://example.com/pragmatic-slots" class="block px-3 py-2 text-base font-medium text-white hover:text-neon-pink hover:bg-dark-900" data-i18n="nav.pragmatic_slots">Pragmatic Slots</a>
+                <a href="all-slots.html" class="block px-3 py-2 text-base font-medium text-white hover:text-neon-pink hover:bg-dark-900" data-i18n="nav.all_slots">All Slots</a>
+                
+                <div class="pt-2 border-t border-dark-900">
+                    <a href="#" onclick="changeLanguage('en')" class="block px-3 py-2 text-base font-medium text-white hover:text-neon-pink">English</a>
+                    <a href="#" onclick="changeLanguage('ru')" class="block px-3 py-2 text-base font-medium text-white hover:text-neon-pink">Русский</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="pt-16">
+        <!-- Hero Section -->
+        <section class="hero-gradient text-white py-20">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="hero-content">
+                    <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-4" data-i18n="review_page.title">Book of Ra Slot Review</h1>
+                    <p class="text-xl md:text-2xl mb-8 opacity-90" data-i18n="review_page.subtitle">An in-depth look at the classic adventure-themed slot</p>
+                    <div class="flex items-center space-x-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-star text-neon-green mr-1"></i>
+                            <span class="text-white font-medium">4.9</span>
+                        </div>
+                        <span class="bg-neon-green text-dark-900 text-xs font-medium px-2.5 py-0.5 rounded">RTP 95.1%</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Review Section -->
+        <section class="py-16 bg-dark-800">
+            <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+                    <!-- Main Review Content -->
+                    <div class="lg:col-span-2">
+                        <div class="bg-dark-900 rounded-lg p-6 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1588286840103-1e358189d2c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=1374&q=80" alt="Book of Ra" class="w-full h-64 object-cover mb-6" loading="lazy">
+                            <h2 class="text-2xl font-bold text-white mb-4" data-i18n="review.overview">Overview</h2>
+                            <p class="text-gray-400 mb-6" data-i18n="review.overview_desc">Book of Ra is a legendary slot by Novomatic, known for its Egyptian adventure theme. With 5 reels and 9 paylines, it offers a thrilling experience with high volatility and the chance for big wins.</p>
+                            
+                            <h2 class="text-2xl font-bold text-white mb-4" data-i18n="review.gameplay">Gameplay & Features</h2>
+                            <ul class="text-gray-400 mb-6 list-disc pl-5">
+                                <li data-i18n="review.feature1">Free Spins: Triggered by 3+ Book symbols, granting 10 free spins with a special expanding symbol.</li>
+                                <li data-i18n="review.feature2">Gamble Feature: Double your winnings by guessing the color of a card.</li>
+                                <li data-i18n="review.feature3">High Volatility: Ideal for players seeking big payouts.</li>
+                            </ul>
+                            
+                            <h2 class="text-2xl font-bold text-white mb-4" data-i18n="review.pros_cons">Pros & Cons</h2>
+                            <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                                <div>
+                                    <h3 class="text-lg font-semibold text-neon-green mb-2" data-i18n="review.pros">Pros</h3>
+                                    <ul class="text-gray-400 list-disc pl-5">
+                                        <li data-i18n="review.pro1">Exciting free spins with expanding symbols.</li>
+                                        <li data-i18n="review.pro2">Classic design with immersive theme.</li>
+                                        <li data-i18n="review.pro3">High win potential.</li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <h3 class="text-lg font-semibold text-neon-pink mb-2" data-i18n="review.cons">Cons</h3>
+                                    <ul class="text-gray-400 list-disc pl-5">
+                                        <li data-i18n="review.con1">Lower RTP compared to modern slots.</li>
+                                        <li data-i18n="review.con2">Dated graphics for some players.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Sidebar -->
+                    <div>
+                        <div class="bg-dark-900 rounded-lg p-6 shadow-sm">
+                            <h3 class="text-lg font-semibold text-white mb-4" data-i18n="review.slot_info">Slot Information</h3>
+                            <ul class="text-gray-400 space-y-2">
+                                <li><span class="font-medium text-white" data-i18n="review.provider">Provider:</span> Novomatic</li>
+                                <li><span class="font-medium text-white" data-i18n="review.reels">Reels:</span> 5</li>
+                                <li><span class="font-medium text-white" data-i18n="review.paylines">Paylines:</span> 9</li>
+                                <li><span class="font-medium text-white" data-i18n="review.volatility">Volatility:</span> High</li>
+                                <li><span class="font-medium text-white" data-i18n="review.rtp">RTP:</span> 95.1%</li>
+                            </ul>
+                            <a href="https://example.com/play-book-of-ra" class="btn-neon mt-6 w-full text-center" data-i18n="review.play_now">Play Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white pt-16 pb-8">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <!-- About -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4 flex items-center">
+                        <div class="chip text-xs">777</div>
+                        <span class="ml-2">Slot Expert</span>
+                    </h3>
+                    <p class="text-gray-400 mb-4" data-i18n="footer.about">The most honest guide to online slots and gaming strategies.</p>
+                    <div class="flex space-x-4">
+                        <a href="https://t.me/slotexpert" class="text-gray-400 hover:text-neon-pink"><i class="fab fa-telegram"></i></a>
+                        <a href="https://vk.com/slotexpert" class="text-gray-400 hover:text-neon-pink"><i class="fab fa-vk"></i></a>
+                        <a href="https://youtube.com/slotexpert" class="text-gray-400 hover:text-neon-pink"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Sections -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footer.sections">Sections</h3>
+                    <ul class="space-y-2">
+                        <li><a href="all-slots.html" class="text-gray-400 hover:text-neon-pink" data-i18n="footer.all_slots">All Slots</a></li>
+                        <li><a href="https://example.com/tactics" class="text-gray-400 hover:text-neon-pink" data-i18n="footer.gaming_strategies">Gaming Strategies</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Information -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footer.information">Information</h3>
+                    <ul class="space-y-2">
+                        <li><a href="https://example.com/about" class="text-gray-400 hover:text-neon-pink" data-i18n="footer.about_us">About Us</a></li>
+                        <li><a href="https://example.com/contact" class="text-gray-400 hover:text-neon-pink" data-i18n="footer.contacts">Contacts</a></li>
+                        <li><a href="https://example.com/privacy" class="text-gray-400 hover:text-neon-pink" data-i18n="footer.privacy">Privacy Policy</a></li>
+                        <li><a href="https://example.com/terms" class="text-gray-400 hover:text-neon-pink" data-i18n="footer.terms">Terms of Use</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Responsible Gaming -->
+                <div>
+                    <h3 class="text-lg font-semibold mb-4" data-i18n="footer.responsible_gaming">Responsible Gaming</h3>
+                    <p class="text-gray-400 mb-4">18+</p>
+                    <p class="text-gray-400" data-i18n="footer.responsible_gaming_desc">If you have gambling problems, seek help:</p>
+                    <ul class="space-y-2">
+                        <li><a href="https://www.gamblingtherapy.org" class="text-gray-400 hover:text-neon-pink text-sm">Gambling Therapy</a></li>
+                        <li><a href="https://www.gamblersanonymous.org" class="text-gray-400 hover:text-neon-pink text-sm">Gamblers Anonymous</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Copyright -->
+            <div class="border-t border-dark-800 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 Slot Expert. All rights reserved. 18+</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Localization data
+        const translations = {
+            en: {
+                'nav.new_slots': 'New Slots',
+                'nav.pragmatic_slots': 'Pragmatic Slots',
+                'nav.all_slots': 'All Slots',
+                'review_page.title': 'Book of Ra Slot Review',
+                'review_page.subtitle': 'An in-depth look at the classic adventure-themed slot',
+                'review.overview': 'Overview',
+                'review.overview_desc': 'Book of Ra is a legendary slot by Novomatic, known for its Egyptian adventure theme. With 5 reels and 9 paylines, it offers a thrilling experience with high volatility and the chance for big wins.',
+                'review.gameplay': 'Gameplay & Features',
+                'review.feature1': 'Free Spins: Triggered by 3+ Book symbols, granting 10 free spins with a special expanding symbol.',
+                'review.feature2': 'Gamble Feature: Double your winnings by guessing the color of a card.',
+                'review.feature3': 'High Volatility: Ideal for players seeking big payouts.',
+                'review.pros_cons': 'Pros & Cons',
+                'review.pros': 'Pros',
+                'review.pro1': 'Exciting free spins with expanding symbols.',
+                'review.pro2': 'Classic design with immersive theme.',
+                'review.pro3': 'High win potential.',
+                'review.cons': 'Cons',
+                'review.con1': 'Lower RTP compared to modern slots.',
+                'review.con2': 'Dated graphics for some players.',
+                'review.slot_info': 'Slot Information',
+                'review.provider': 'Provider',
+                'review.reels': 'Reels',
+                'review.paylines': 'Paylines',
+                'review.volatility': 'Volatility',
+                'review.rtp': 'RTP',
+                'review.play_now': 'Play Now',
+                'footer.about': 'The most honest guide to online slots and gaming strategies.',
+                'footer.sections': 'Sections',
+                'footer.all_slots': 'All Slots',
+                'footer.gaming_strategies': 'Gaming Strategies',
+                'footer.information': 'Information',
+                'footer.about_us': 'About Us',
+                'footer.contacts': 'Contacts',
+                'footer.privacy': 'Privacy Policy',
+                'footer.terms': 'Terms of Use',
+                'footer.responsible_gaming': 'Responsible Gaming',
+                'footer.responsible_gaming_desc': 'If you have gambling problems, seek help:'
+            },
+            ru: {
+                'nav.new_slots': 'Новые слоты',
+                'nav.pragmatic_slots': 'Слоты Pragmatic',
+                'nav.all_slots': 'Все слоты',
+                'review_page.title': 'Обзор слота Book of Ra',
+                'review_page.subtitle': 'Подробный анализ классического слота с приключенческой тематикой',
+                'review.overview': 'Обзор',
+                'review.overview_desc': 'Book of Ra — легендарный слот от Novomatic, известный своей египетской приключенческой тематикой. С 5 барабанами и 9 линиями выплат он предлагает захватывающий опыт с высокой волатильностью и возможностью крупных выигрышей.',
+                'review.gameplay': 'Геймплей и функции',
+                'review.feature1': 'Бесплатные вращения: Активируются при 3+ символах книги, дают 10 бесплатных вращений с особым расширяющимся символом.',
+                'review.feature2': 'Функция азартной игры: Удвойте выигрыш, угадав цвет карты.',
+                'review.feature3': 'Высокая волатильность: Идеально для игроков, ищущих крупные выплаты.',
+                'review.pros_cons': 'Плюсы и минусы',
+                'review.pros': 'Плюсы',
+                'review.pro1': 'Захватывающие бесплатные вращения с расширяющимися символами.',
+                'review.pro2': 'Классический дизайн с погружающей тематикой.',
+                'review.pro3': 'Высокий потенциал выигрыша.',
+                'review.cons': 'Минусы',
+                'review.con1': 'Низкий RTP по сравнению с современными слотами.',
+                'review.con2': 'Устаревшая графика для некоторых игроков.',
+                'review.slot_info': 'Информация о слоте',
+                'review.provider': 'Провайдер',
+                'review.reels': 'Барабаны',
+                'review.paylines': 'Линии выплат',
+                'review.volatility': 'Волатильность',
+                'review.rtp': 'RTP',
+                'review.play_now': 'Играть сейчас',
+                'footer.about': 'Самый честный гид по онлайн-слотам и игровым стратегиям.',
+                'footer.sections': 'Разделы',
+                'footer.all_slots': 'Все слоты',
+                'footer.gaming_strategies': 'Игровые стратегии',
+                'footer.information': 'Информация',
+                'footer.about_us': 'О нас',
+                'footer.contacts': 'Контакты',
+                'footer.privacy': 'Политика конфиденциальности',
+                'footer.terms': 'Условия использования',
+                'footer.responsible_gaming': 'Ответственная игра',
+                'footer.responsible_gaming_desc': 'Если у вас есть проблемы с азартными играми, обратитесь за помощью:'
+            }
+        };
+
+        // Language switcher
+        function changeLanguage(lang) {
+            document.querySelectorAll('[data-i18n]').forEach(element => {
+                const key = element.getAttribute('data-i18n');
+                element.textContent = translations[lang][key] || element.textContent;
+            });
+            document.getElementById('lang-indicator').textContent = lang.toUpperCase();
+            localStorage.setItem('language', lang);
+        }
+
+        // Load saved language on page load
+        document.addEventListener('DOMContentLoaded', () => {
+            const savedLang = localStorage.getItem('language') || 'en';
+            changeLanguage(savedLang);
+        });
+
+        // Mobile menu
+        document.getElementById('mobile-menu-button').addEventListener('click', function() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
